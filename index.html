@@ -8,7 +8,7 @@
 <div id="r">Pick two dates.</div><div class="ad"><!-- AD SLOT --></div>
 <script>
 const a=document.getElementById('a'),b=document.getElementById('b'),r=document.getElementById('r');
-a.valueAsDate=new Date();
+a.valueAsDate=new Date();b.valueAsDate=new Date(Date.now()+30*864e5);
 function u(){if(!a.value||!b.value)return;
 const x=new Date(a.value),y=new Date(b.value),d=Math.round((y-x)/864e5),n=Math.abs(d);
 let [s,e]=x<=y?[x,y]:[y,x],m=(e.getFullYear()-s.getFullYear())*12+e.getMonth()-s.getMonth();
