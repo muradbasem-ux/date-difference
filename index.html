@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Days Between Dates Calculator â€“ Free</title>
+<title>Days Between Dates Calculator – Free</title>
 <meta name="description" content="Find the number of days, weeks, months and years between two dates. Also add or subtract days from a date.">
 <link rel="stylesheet" href="style.css"><style>body{font:16px system-ui;max-width:600px;margin:2rem auto;padding:0 1rem}label{display:block;margin:.8rem 0 .2rem}input{font:inherit;padding:.6rem;width:100%;box-sizing:border-box}#r{margin-top:1.2rem;font-size:1.3rem;background:var(--card);padding:1rem;border-radius:8px}.ad{margin:2rem 0;min-height:90px}</style>
 <!-- ADSENSE: paste your adsbygoogle <script> here -->
@@ -13,7 +13,7 @@ function u(){if(!a.value||!b.value)return;
 const x=new Date(a.value),y=new Date(b.value),d=Math.round((y-x)/864e5),n=Math.abs(d);
 let [s,e]=x<=y?[x,y]:[y,x],m=(e.getFullYear()-s.getFullYear())*12+e.getMonth()-s.getMonth();
 if(e.getDate()<s.getDate())m--;
-r.innerHTML=`<b>${n}</b> days<br>${(n/7).toFixed(1)} weeks Â· ${Math.floor(m/12)} years ${m%12} months`}
+r.innerHTML=`<b>${n}</b> days<br>${(n/7).toFixed(1)} weeks · ${Math.floor(m/12)} years ${m%12} months`}
 a.onchange=b.onchange=u;u();
 </script><footer>Free tool · no sign-up · your data stays in your browser</footer></body></html>
 
